@@ -1,0 +1,95 @@
+%YAML:1.0
+
+dataset_path:      "/home/zhangsheng/ssd/Dataset/zhou/object/point/chair_06282/"
+
+# Scale table params
+scale_bucket_count:      800000
+scale_bucket_size:       10
+scale_count:             8000000
+scale_linked_list_size:  7
+scale_value_capacity:    80000
+curvature_th:            0.0001
+cd_th:                   0.0001
+join_th:                 1
+
+# Hash params
+bucket_count:      800000
+bucket_size:       10
+count:             8000000
+linked_list_size:  7
+value_capacity:    80000
+
+# SDF params
+voxel_size:                0.006
+approximate_size:          0.006
+sdf_upper_bound:           40
+truncation_distance_scale: 0.8
+truncation_distance:       0.03
+weight_sample:             10
+weight_upper_bound:        255
+regularization_rough_measure: 1
+
+# Sensor params
+fx:              517.3
+fy:              516.5
+cx:              318.6
+cy:              255.3
+min_depth_range: 0.5
+max_depth_range: 300
+range_factor:    0.0002
+height:          480
+width:           640
+
+# Raycaster params
+min_raycast_depth:    0.5
+max_raycast_depth:    5.5
+raycast_step:         0.016
+sample_sdf_threshold: 0.808
+sdf_threshold:        0.800
+enable_gradient:      1
+
+max_vertex_count:     4000000
+max_triangle_count:   6000000
+
+
+# Hash params
+# bucket_count:      200000
+# bucket_size:       10
+# count:             2000000
+# linked_list_size:  7
+# value_capacity:    100000
+
+# # SDF params
+# voxel_size:                0.025
+# sdf_upper_bound:           4.0
+# truncation_distance_scale: 0.08
+# truncation_distance:       0.5
+# weight_sample:             10
+# weight_upper_bound:        255
+
+# # Sensor params
+# fx:              578.1536394
+# fy:              578.30926219
+# cx:              500
+# cy:              375
+# #fx:               2319.48635973
+# #fy:               2321.77471832
+# #cx:               2000
+# #cy:               1500
+# min_depth_range: 0.5
+# max_depth_range: 6
+# range_factor:    0.001
+# height:          750
+# width:           1000
+
+# # Raycaster params
+# min_raycast_depth:    0.5
+# max_raycast_depth:    6
+# raycast_step:         0.016
+# sample_sdf_threshold: 0.808
+# sdf_threshold:        0.800
+# enable_gradient:      10
+
+# # Mesh params
+# max_vertex_count:     2500000
+# max_triangle_count:   10000000

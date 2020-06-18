@@ -1,0 +1,48 @@
+%YAML:1.0
+
+dataset_path:      "/home/wei/Datasets/BOE/stereo_4/"
+
+# Hash params
+bucket_count:      40000
+bucket_size:       10
+count:       400000
+linked_list_size:  10
+value_capacity:    130000
+
+
+# SDF params
+voxel_size:                0.018
+sdf_upper_bound:           2.5
+truncation_distance_scale: 0.02
+truncation_distance:       0.08
+
+weight_sample:             10
+weight_upper_bound:        255
+
+# Sensor params
+#fx:              926.3596
+#fy:              926.6384
+#cx:              641.0254
+#cy:              355.3172
+fx:              926.3596
+fy:              926.6384
+cx:              641.0254
+cy:              355.3172
+min_depth_range: 0.15
+max_depth_range: 2
+range_factor:    0.0002
+width:           1280
+height:          720
+
+
+
+# Raycaster params
+min_raycast_depth:    0.1
+max_raycast_depth:    10
+raycast_step:         0.016
+sample_sdf_threshold: 0.808
+sdf_threshold:        0.800
+enable_gradient:      1
+
+max_vertex_count:     3000000
+max_triangle_count:   5000000

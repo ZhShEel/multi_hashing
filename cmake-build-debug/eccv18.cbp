@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="eccv18"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reconstruction">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/bin/reconstruction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 reconstruction"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reconstruction/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/bin/reconstruction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 reconstruction/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="block_analysis">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/bin/block_analysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 block_analysis"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="block_analysis/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/bin/block_analysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 block_analysis/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="psdf">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libpsdf.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 psdf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="psdf/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libpsdf.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 psdf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesh-hashing">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libmesh-hashing.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 mesh-hashing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesh-hashing/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libmesh-hashing.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 mesh-hashing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesh-hashing-cuda">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libmesh-hashing-cuda.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 mesh-hashing-cuda"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesh-hashing-cuda/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libmesh-hashing-cuda.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 mesh-hashing-cuda/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gl-util">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libgl-util.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 gl-util"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gl-util/fast">
+				<Option output="/home/zhangsheng/Research/recon/recon/psdf/lib/libgl-util.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_CUDA_GL"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/cuda"/>
+					<Add directory="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 gl-util/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/core/mesh-hashing-cuda_generated_block_array.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/core/mesh-hashing-cuda_generated_collect_block_array.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/core/mesh-hashing-cuda_generated_entry_array.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/core/mesh-hashing-cuda_generated_hash_table.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/core/mesh-hashing-cuda_generated_mesh.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/localizing/mesh-hashing-cuda_generated_point_to_psdf.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/mapping/mesh-hashing-cuda_generated_allocate.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/mapping/mesh-hashing-cuda_generated_recycle.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/mapping/mesh-hashing-cuda_generated_update_psdf.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/mapping/mesh-hashing-cuda_generated_update_simple.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/meshing/mesh-hashing-cuda_generated_marching_cubes.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/optimize/mesh-hashing-cuda_generated_linear_equations.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/optimize/mesh-hashing-cuda_generated_primal_dual.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/sensor/mesh-hashing-cuda_generated_preprocess.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/sensor/mesh-hashing-cuda_generated_rgbd_sensor.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_bounding_box.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_colorize.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_compact_mesh.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_compress_mesh.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_extract_bounding_box.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_ray_caster.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug/CMakeFiles/mesh-hashing-cuda.dir/src/visualization/mesh-hashing-cuda_generated_trajectory.cu.o">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/app/block_analysis.cc">
+			<Option target="block_analysis"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/app/psdf.cc">
+			<Option target="reconstruction"/>
+			<Option target="psdf"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/app/psdf.h">
+			<Option target="reconstruction"/>
+			<Option target="psdf"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/app/reconstruction.cc">
+			<Option target="reconstruction"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/core/block_array.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/core/collect_block_array.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/core/entry_array.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/core/hash_table.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/core/mesh.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/logging_engine.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/logging_engine.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/main_engine.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/main_engine.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/mapping_engine.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/mapping_engine.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/visualizing_engine.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/engine/visualizing_engine.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/args.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/args.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/camera.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/camera.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/framebuffer.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/framebuffer.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/model.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/model.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/program.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/program.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/texture.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/texture.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/uniforms.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/uniforms.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/window.cc">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/extern/opengl-wrapper/src/core/window.h">
+			<Option target="gl-util"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/io/config_manager.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/io/config_manager.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/io/mesh_writer.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/io/mesh_writer.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/localizing/point_to_psdf.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/mapping/allocate.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/mapping/recycle.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/mapping/update_psdf.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/mapping/update_simple.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/meshing/marching_cubes.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/optimize/linear_equations.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/optimize/primal_dual.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/sensor/preprocess.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/sensor/rgbd_data_provider.cc">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/sensor/rgbd_data_provider.h">
+			<Option target="mesh-hashing"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/sensor/rgbd_sensor.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/bounding_box.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/colorize.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/compact_mesh.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/compress_mesh.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/extract_bounding_box.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/ray_caster.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/src/visualization/trajectory.cu">
+			<Option target="mesh-hashing-cuda"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake_modules/FindGLFW3.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake_modules/FindGLEW.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake_modules/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/cmake_modules/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/../../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/zhangsheng/Research/recon/recon/psdf/../../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

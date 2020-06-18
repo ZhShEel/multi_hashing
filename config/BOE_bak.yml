@@ -1,0 +1,51 @@
+%YAML:1.0
+
+dataset_path:      "/home/wei/Datasets/BOE/stereo_5/"
+
+# Hash params
+bucket_count:      40000
+bucket_size:       10
+count:       400000
+linked_list_size:  10
+value_capacity:    130000
+
+
+# SDF params
+voxel_size:                0.018   
+sdf_upper_bound:           3
+truncation_distance_scale: 0.01
+truncation_distance:       0.04
+weight_sample:             10
+weight_upper_bound:        255
+
+# Sensor params
+# // stereo params
+fx:              342.53857354974696
+fy:              342.53857354974696
+cx:              405.72314453125000
+cy:              255.35236549377441
+# // realSense params
+#fx: 463.1798095703125
+#fy: 463.3192138671875
+#cx: 320.5127258300781
+#cy: 177.6586456298828
+min_depth_range: 0.5
+max_depth_range: 3
+range_factor:    0.001
+# realSense resolution
+#height:          360
+#width:           640
+# stereo resolution
+height:          480
+width:           752
+
+# Raycaster params
+min_raycast_depth:    0
+max_raycast_depth:    10
+raycast_step:         0.016
+sample_sdf_threshold: 0.808
+sdf_threshold:        0.800
+enable_gradient:      1
+
+max_vertex_count:     3000000
+max_triangle_count:   5000000

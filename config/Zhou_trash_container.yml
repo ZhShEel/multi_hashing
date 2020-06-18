@@ -1,0 +1,53 @@
+%YAML:1.0
+
+dataset_path:      "/home/zhangsheng/ssd/Dataset/zhou/object/point/trash_container_07239/"
+# dataset_path:      "/home/wei/Datasets/ScienceBuilding/"
+
+# Scale table params
+scale_bucket_count:      800000
+scale_bucket_size:       10
+scale_count:             8000000
+scale_linked_list_size:  7
+scale_value_capacity:    80000
+curvature_th:            0.0001
+cd_th:                   0.0001
+join_th:                 1
+
+# Hash params
+bucket_count:      800000
+bucket_size:       10
+count:             8000000
+linked_list_size:  7
+value_capacity:    80000
+
+# SDF params
+voxel_size:                0.004
+approximate_size:          0.004
+sdf_upper_bound:           40
+truncation_distance_scale: 8
+truncation_distance:       0.5
+weight_sample:             10
+weight_upper_bound:        255
+regularization_rough_measure: 1
+
+# Sensor params
+fx:              517.3
+fy:              516.5
+cx:              318.6
+cy:              255.3
+min_depth_range: 0.5
+max_depth_range: 300
+range_factor:    0.0002
+height:          480
+width:           640
+
+# Raycaster params
+min_raycast_depth:    0.5
+max_raycast_depth:    5.5
+raycast_step:         0.016
+sample_sdf_threshold: 0.808
+sdf_threshold:        0.800
+enable_gradient:      1
+
+max_vertex_count:     6000000
+max_triangle_count:   6000000

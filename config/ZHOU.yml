@@ -1,0 +1,46 @@
+%YAML:1.0
+
+dataset_path:      "/home/wei/Datasets/yzk/"
+# dataset_path:      "/home/wei/Datasets/ScienceBuilding/"
+
+# Hash params
+bucket_count:      200000
+bucket_size:       10
+count:             2000000
+linked_list_size:  7
+value_capacity:    100000
+
+# SDF params
+voxel_size:                0.025
+sdf_upper_bound:           4.0
+truncation_distance_scale: 0.08
+truncation_distance:       0.5
+weight_sample:             10
+weight_upper_bound:        255
+
+# Sensor params
+fx:              578.1536394
+fy:              578.30926219
+cx:              500
+cy:              375
+#fx:               2319.48635973
+#fy:               2321.77471832
+#cx:               2000
+#cy:               1500
+min_depth_range: 0.5
+max_depth_range: 6
+range_factor:    0.001
+height:          750
+width:           1000
+
+# Raycaster params
+min_raycast_depth:    0.5
+max_raycast_depth:    6
+raycast_step:         0.016
+sample_sdf_threshold: 0.808
+sdf_threshold:        0.800
+enable_gradient:      10
+
+# Mesh params
+max_vertex_count:     2500000
+max_triangle_count:   10000000

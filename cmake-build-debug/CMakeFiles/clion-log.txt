@@ -1,0 +1,46 @@
+/home/zhangsheng/Downloads/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zhangsheng/Research/recon/recon/psdf
+-- Checking for module 'glfw3'
+--   Found glfw3, version 3.1.2
+-- Found CUDA: /usr/local/cuda (found suitable exact version "8.0") 
+-- Found OpenCV: /usr/local (found suitable version "3.4.0", minimum required is "3") 
+-- Found CUDA: /usr/local/cuda (found version "8.0") 
+-- Found Glog
+--   Includes : /usr/include
+--   Libraries : /usr/lib/x86_64-linux-gnu/libglog.so
+-- Found include paths:
+-- Found libraries:
+-- /usr/lib/x86_64-linux-gnu/libGLU.so
+-- /usr/lib/x86_64-linux-gnu/libGL.so
+-- /usr/lib/x86_64-linux-gnu/libGLEW.so
+-- glfw
+-- rt
+-- m
+-- dl
+-- Xrandr
+-- Xinerama
+-- Xi
+-- Xcursor
+-- Xrender
+-- GL
+-- m
+-- pthread
+-- dl
+-- drm
+-- Xdamage
+-- Xfixes
+-- X11-xcb
+-- xcb-glx
+-- xcb-dri2
+-- Xxf86vm
+-- Xext
+-- X11
+-- pthread
+-- xcb
+-- Xau
+-- Xdmcp
+-- /usr/local/cuda/lib64/libcudart.so
+-- /usr/lib/x86_64-linux-gnu/libcuda.so
+-- /usr/lib/x86_64-linux-gnu/libglog.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhangsheng/Research/recon/recon/psdf/cmake-build-debug

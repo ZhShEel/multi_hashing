@@ -1,0 +1,55 @@
+%YAML:1.0
+# 0   - ICL
+# 1~3 - TUM1~3
+# 4   - ZHOU
+# 5   - SUN3D_ORIGINAL
+# 6   - PKU
+# 7   - BOE
+# 8   - Engine
+# 9   - Door
+# 10  - Ply1
+# 11  - Ply3
+# 12  - B_n_P
+# 13  - Zhou_chair
+# 14  - Zhou_misc
+# 15  - Zhou_trash_container
+# 16  - test
+# 17  - Dragon
+# 18  - Element
+# 19  - ShapeNet_airplane
+# 20  - ShapeNet_paino
+# 21  - ShapeNet_dresser
+# 22  - ShapeNet_bookshelf
+
+dataset_type: 19
+
+# -----------
+enable_bayesian_update: 0
+
+enable_sdf_gradient:    0
+enable_polygon_mode:    0
+color_type:             0
+# 0   - confidence
+# 1   - real rgb
+enable_color:           1
+enable_navigation:      1
+enable_global_mesh:     1
+enable_bounding_box:    0
+enable_trajectory:      1
+enable_meshing:         1
+enable_ray_casting:     1
+enable_join_process:    0
+enable_view_rotation:    1
+save_result_all_the_time: 0
+enable_gl_vis:          0
+
+enable_video_recording:  1
+enable_ply_saving:       1
+save_per_frame:        50
+
+filename_prefix: "tum1-shading"
+time_profile:    ""
+memo_profile:    ""
+
+# Others
+run_frames:  -1
